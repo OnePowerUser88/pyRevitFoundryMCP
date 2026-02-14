@@ -1,0 +1,4 @@
+# Copy to .pyrevit-foundry.toml in your extension repo root
+# Optional: point to pyRevit core clone for wrapper/import suggestions
+
+pyrevit_core_path = "D:/path/to/pyrevit-clone"

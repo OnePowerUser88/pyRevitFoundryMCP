@@ -1,0 +1,9 @@
+{
+  "builtin": "False",
+  "default_enabled": "True",
+  "type": "extension",
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "author": "{{author}}",
+  "dependencies": []
+}

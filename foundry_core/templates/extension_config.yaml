@@ -1,0 +1,24 @@
+# pyRevit Extension Config (YAML)
+# 1. Run create_extension_config to generate this file
+# 2. Edit extension_name, output_path, tabs to customize your ribbon
+# 3. Run create_extension with config_path pointing to this file
+#
+# tabs: Tab -> Panel -> items (pushbutton | pulldown with buttons | stack with items)
+
+extension_name: "MyExtension"
+output_path: "D:/path/to/output"  # Where to create the .extension folder
+author: ""
+description: ""
+
+tabs:
+  - name: Main
+    panels:
+      - name: Tools
+        items:
+          - name: HelloWorld
+            type: pushbutton
+          - name: Export
+            type: pulldown
+            buttons:
+              - name: ToExcel
+              - name: ToPDF
