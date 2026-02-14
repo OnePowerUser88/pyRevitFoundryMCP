@@ -1,6 +1,8 @@
 # pyRevit Foundry MCP
 
-MCP server for developing and maintaining pyRevit extensions. Static analysis only—no Revit runtime required.
+MCP server for developing and maintaining pyRevit extensions. Static analysis only, no Revit runtime required.
+
+**License:** GPL-3.0 (same as [pyRevit](https://github.com/pyrevitlabs/pyRevit)). See [LICENSE](LICENSE). Contributing: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## What it does
 
@@ -57,11 +59,18 @@ Or use `uv`:
 }
 ```
 
+## Repo layout
+
+- `foundry_core/` – indexers, analyzers, extension creator (no MCP deps)
+- `foundry_mcp/` – MCP server and tools
+- `tests/` – pytest
+- `.pyrevit-foundry.toml` is gitignored; copy from `.pyrevit-foundry.toml.example` for local core path.
+
 ## pyRevit core clone (optional)
 
 For wrapper/import suggestions, point to a local pyRevit core clone:
 
-**Option 1:** `.pyrevit-foundry.toml` in repo root:
+**Option 1:** `.pyrevit-foundry.toml` in repo root (copy from `.pyrevit-foundry.toml.example`):
 
 ```toml
 pyrevit_core_path = "D:/path/to/pyrevit-clone"

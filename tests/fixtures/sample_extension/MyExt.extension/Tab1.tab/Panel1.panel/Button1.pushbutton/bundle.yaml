@@ -1,2 +1,3 @@
-name: "My Button"
-context: [revit]
+title: "My Button"
+tooltip: "A test button"
+help_url: ""

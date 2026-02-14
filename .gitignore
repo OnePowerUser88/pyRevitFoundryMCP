@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Tests
+.pytest_cache/
+
+# Local config (machine-specific paths)
+.pyrevit-foundry.toml
